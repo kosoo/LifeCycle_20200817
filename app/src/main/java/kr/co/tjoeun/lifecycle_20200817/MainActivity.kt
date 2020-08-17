@@ -3,6 +3,7 @@ package kr.co.tjoeun.lifecycle_20200817
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -12,7 +13,9 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
         setupEvents()
         setValues()
-    }
+
+        Log.d("메인화면", "onCreate 실행됨됨")
+
 
     override fun setupEvents() {
 
