@@ -14,8 +14,24 @@ class MainActivity : BaseActivity() {
         setupEvents()
         setValues()
 
-        Log.d("메인화면", "onCreate 실행됨됨")
+//        Log.d("메인화면", "onCreate 실행됨됨")
+    }
 
+    override fun onResume() {
+        super.onResume()
+
+        Log.d("메인화면","onResume 실행됨 - 화면이 나타남")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("메인화면","onPause 실행됨 - 화면이 사라짐")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("메인화면","onDestroy 실행됨 - 액티비티가 메모리에서 소멸됨")
+    }
 
     override fun setupEvents() {
 
