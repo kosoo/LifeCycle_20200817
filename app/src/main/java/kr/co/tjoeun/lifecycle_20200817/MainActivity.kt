@@ -14,7 +14,7 @@ class MainActivity : BaseActivity() {
         setupEvents()
         setValues()
 
-//        Log.d("메인화면", "onCreate 실행됨됨")
+        Log.d("메인화면", "onCreate 실행됨")
     }
 
     override fun onResume() {
